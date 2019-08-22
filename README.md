@@ -24,7 +24,7 @@ YCToken能够支持身份验证和过期时间验证，并支持业务参数的�
     
     // 解析token串，生成YCToken对象
     app_secret = bytearray(b'appkey1234')
-    token_str = "_2dllwAAAG8AADA5AAUxMzIxMgACAAVwa2V5MQAFcHZhbDEABXBrZXkyAAVwdmFsMgACAARwcmkxAAAAAAAAAAEABHByaTIAAAAAAAAAAgAAAWwn1q9vAAAALmE2hvjGAlnQ85ey5GVjrd_120qE"
+    token_str = "_2dllwAAAHMAADA5AAk5ODc2NTQzMjEAAgAFcGtleTIABXB2YWwyAAVwa2V5MQAFcHZhbDEAAgAEcHJpMQAAAAAAAAEsAARwcmkyAAAAAAAAAZAAAAFsuAVsTAAA6mDjTWxNCdjou_5GyCFCWLtGAgn9Ww"
 
     yt, err = YCToken().parse(token_str, app_secret)
     
