@@ -4,6 +4,7 @@
 import hashlib, hmac
 import base64
 import struct
+import time
 import binascii
 
 BASELEN = 50
@@ -131,3 +132,9 @@ class YCToken:
             err = "parse token err:" + str(e)
     
         return tk, err
+
+
+    def validate(this):
+        if this.build_timestamp + this.valid_time * 1000 > int(time.time() * 1000):
+            return True
+        return False
