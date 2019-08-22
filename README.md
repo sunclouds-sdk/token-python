@@ -44,7 +44,7 @@ YCToken能够支持身份验证和过期时间验证，并支持业务参数的�
 
 https://github.com/sunclouds-sdk/token-java
  
-**python**
+**golang**
 
 https://github.com/sunclouds-sdk/token-golang
  
