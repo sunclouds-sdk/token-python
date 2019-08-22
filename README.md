@@ -29,10 +29,14 @@ YCToken能够支持身份验证和过期时间验证，并支持业务参数的�
     yt, err = YCToken().parse(token_str, app_secret)
     
     if err != None:
-        // print err
+        // print "token 解析失败"
     else:
-        // check valid time
-        // do something
+        if yt.validate():
+            // print "token 有效"
+            // do something
+        else:
+            //print "token 过期"
+        
 
  
  
